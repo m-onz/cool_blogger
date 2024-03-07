@@ -1,0 +1,13 @@
+
+<div id="posts">
+<%= for post <- @posts do %>
+  <div id="{post.id}" style="margin-bottom: 3rem;">
+    <h2>
+      <span>#</span><.link href={~p"/blog/#{post.id}"}><%= post.title %></.link>
+    </h2>
+    <p>
+      <time><%= post.date %></time>
+    </p>
+  </div>
+<% end %>
+</div>

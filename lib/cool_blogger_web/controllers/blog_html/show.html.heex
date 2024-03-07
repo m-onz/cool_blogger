@@ -1,0 +1,14 @@
+<div class="blog-post">
+
+<.link href={~p"/"}>← </.link>
+
+<h1><span>#</span><%= @post.title %></h1>
+
+<p>
+  <time><%= @post.date %></time> by <%= @post.author %> [<%= Enum.join(@post.tags, ", ") %>]
+</p>
+<br>
+
+<%= raw @post.body %>
+
+</div>
